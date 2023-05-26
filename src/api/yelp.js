@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-  basedURL: "https://api.yelp.com/v3/businesses",
+  baseURL: "https://api.yelp.com/v3/businesses",
   headers: {
     Authorization:
       "Bearer " +

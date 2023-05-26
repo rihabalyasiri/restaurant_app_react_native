@@ -11,7 +11,8 @@ const SearchBar = (props) => {
         autoCapitalize="none"
         value={props.term}
         onChangeText={props.onChangeTerm}
-        onEndEditing={props.onTermSubmit}
+              onEndEditing={props.onTermSubmit}
+              style={styles.input}
       />
     </View>
   );
@@ -30,7 +31,10 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginHorizontal: 15,
-  },
+    },
+    input: {
+        width: "100%",
+  }
 });
 
 export default SearchBar;
